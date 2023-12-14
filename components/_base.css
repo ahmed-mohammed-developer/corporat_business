@@ -1,0 +1,27 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background: #ffffff;
+   color: #666666;
+   font-family: 'Roboto', sans-serif;
+}
+:root {
+   --padding: 20px;
+   --margin-bottom: 100px
+}
+ul,
+li,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
