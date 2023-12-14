@@ -1,11 +1,13 @@
 header {
-   padding-block: var(--padding);
+   padding-top: var(--padding);
    background-image: url(/assets/banner-bg.png);
    background-size: 100%;
    background-repeat: no-repeat;
+   background-size: cover;
    height: auto;
    position: relative;
    z-index: 1;
+   padding-bottom: 100px;
 }
 
 header::before {
@@ -19,11 +21,13 @@ header::before {
    top: 0px;
    z-index: -1;
 }
-
+.logo {
+   width: auto;
+}
 #menu-icon {
    display: none;
    font-size: 2rem;
-   color: #000;
+   color: #060707;
    cursor: pointer;
 }
 
@@ -40,7 +44,7 @@ nav .navbar {
 
 nav .navbar  li a{
    text-decoration: none;
-   color: black;
+   color: #060707;
    font-size: 1rem;
    font-weight: 500;
    text-transform: uppercase;
@@ -54,6 +58,52 @@ nav .navbar  li:hover a{
    color: #f5a738;
 }
 
+header .main-section h1 {
+   font-size: 60px;
+   line-height: 90px;
+   font-weight: 900;
+   color: #060707;
+}
+header .main-section p {
+   font-weight: 400;
+   line-height: 24px;
+   padding-top: 30px;
+   color: #060707;
+}
+
+header .btn_main {
+   display: flex;
+}
+header .main-section .started_text {
+   width: 180px;
+   margin-top: 30px;
+   margin-right: 20px;
+}
+
+header .main-section .started_text a {
+   width: 100%;
+   padding: 15px 15px;
+   color: #ffffff;
+   background-color: #f5a738;
+   text-align: center;
+   font-size: 18px;
+   border-radius: 40px;
+   float: left;
+   text-decoration: none;
+   cursor: pointer;
+   transition: all 0.5s ease;
+}
+header .main-section .started_text a:hover {
+   color: #ffffff;
+   background-color: #060707;
+}
+
+header .main-section .started_text.active a {
+   color: #ffffff;
+   background-color: #060707;
+}
+
+
 @media screen and (max-width: 740px) {
    #menu-icon {
       display: block;
@@ -61,15 +111,34 @@ nav .navbar  li:hover a{
    nav .navbar {
       position: absolute;
       right: 0;
-      top: 70px;
-      left: 20px;
+      top: 50px;
+      left: 0px;
       flex-direction: column;
       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
       transition: 0.5s ease;
+      background-color: rgb( 225, 237, 249, 1);
+      padding-block: 20px;
+      text-align: start;
+      padding-left: 20px;
    }
    
    nav .navbar.active {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
+}
+
+@media screen and (max-width: 460px) {
+   nav {
+      margin-bottom: 50px;
+   }
+   header .main-section h1 {
+      font-size: 40px;
+      line-height: 70px;
+   }
+}
+@media screen and (max-width: 320px) {
+   header .btn_main {
+      flex-direction: column;
+   }
 }
 
