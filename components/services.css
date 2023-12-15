@@ -1,0 +1,126 @@
+.services {
+      padding-block: 100px;
+}
+
+.services .service {
+   padding: 40px;
+   border-radius: 10px;
+   border: 2px solid #f5a738;
+}
+.service h1 {
+   margin-bottom: 10px;
+   position: relative;
+}
+
+.service h1::before {
+   content: "";
+   position: absolute;
+   background: #f5a738;
+   height: 2px;
+   width: 220px;
+   top: 21px;
+   right: 0;
+   left: 190px;
+}
+.services .service .section-service {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   align-items: center;
+   gap: 30px;
+}
+
+.services .service .section-service .section-ser {
+   margin-top: 50px;
+}
+.services .service .section-service .section-ser .ser-img {
+   width: 80px;
+   background: #fff;
+   padding: 20px;
+   text-align: center;
+   border-radius: 8px;
+   box-shadow: 0px 0px 10px 8px #fafafa;
+}
+
+.services .service .section-service .section-ser h3 {
+   font-size: 22px;
+   font-weight: bold;
+   color: #0f0f0f;
+   margin-top: 20px;
+}
+
+.services .service .section-service .section-ser p {
+   color: #0f0f0f;
+   margin-top: 20px;
+   line-height: 24px;
+   font-weight: 300;
+}
+
+.services .service  .btn_main {
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+}
+.services .service  .btn_main a {
+   width: 180px;
+   padding: 15px 15px;
+   color: #ffffff;
+   background-color: #f5a738;
+   text-align: center;
+   font-size: 15px;
+   border-radius: 40px;
+   float: left;
+   text-decoration: none;
+   cursor: pointer;
+   transition: all 0.5s ease;
+}
+.services .service  .btn_main a:hover {
+   color: #ffffff;
+   background-color: #060707;
+}
+
+@media screen and (max-width: 500px) {
+   .service h1::before {
+      width: 170px;
+   }
+   }
+
+   @media screen and (max-width: 450px) {
+      .service h1::before {
+         width: 120px;
+      }
+      }
+
+      @media screen and (max-width: 405px) {
+         .service h1::before {
+            width: 90px;
+         }
+         }
+
+         @media screen and (max-width: 370px) {
+            .service h1::before {
+               width: 50px;
+            }
+            }
+
+            @media screen and (max-width: 330px) {
+               .services .service .section-service {
+                  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+               }
+               .service h1::before {
+                  display: none;
+               }
+               }
+               @media screen and (max-width: 285px) {
+                  .services .service .section-service {
+                     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                  }
+                  .service h1::before {
+                     display: none;
+                  }
+                  .service h1 {
+                     font-size: 25px;
+                  }
+                  .services .service .section-service .section-ser h3 {
+                     font-size: 18px;
+                  }
+                  }
