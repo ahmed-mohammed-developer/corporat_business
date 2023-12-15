@@ -1,0 +1,97 @@
+.about {
+   padding-block: 100px;
+}
+
+.about h1 {
+   margin-bottom: 10px;
+   position: relative;
+}
+
+.about h1::before {
+   content: "";
+   position: absolute;
+   background: #f5a738;
+   height: 2px;
+   width: 220px;
+   top: 21px;
+   right: 0;
+   left: 150px;
+}
+
+.about .about-section {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+   align-items: center;
+   gap: 30px;
+   padding-top: 50px;
+}
+
+.about .about-section .about-img img {
+   max-width: 100%;
+}
+ .about .about-section .about-title p {
+   line-height: 24px;
+   padding-bottom: 50px;
+ }
+
+ .about .about-section .about-title .btn_main {
+   display: flex;
+   justify-content: end;
+ }
+ .about .about-section .about-title .btn_main a {
+   width: 180px;
+   padding: 15px 15px;
+   color: #ffffff;
+   background-color: #f5a738;
+   text-align: center;
+   font-size: 15px;
+   border-radius: 40px;
+   float: left;
+   text-decoration: none;
+   cursor: pointer;
+   transition: all 0.5s ease;
+}
+.about .about-section .about-title .btn_main a:hover {
+   color: #ffffff;
+   background-color: #060707;
+}
+
+@media screen and (max-width: 870px) {
+   .about .about-section {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   }
+   }
+
+   @media screen and (max-width: 750px) {
+      .about .about-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: end; 
+      }
+      .about .about-section .about-img  {
+         /*Border: 4px solid red;*/
+      }
+         .about .about-section .about-img img {
+            max-width: 80%;
+            margin-inline: auto;
+            display: block;
+         }
+         .about .about-section .about-title .btn_main {
+            justify-content: center;
+          }
+          .about .about-section .about-title p {
+            text-align: center;
+          }
+      }
+
+      @media screen and (max-width: 400px) {
+         .about h1::before {
+            width: 150px;
+         }
+         }
+
+         @media screen and (max-width: 330px) {
+            .about h1::before {
+               width: 100px;
+            }
+            }
