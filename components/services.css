@@ -97,6 +97,9 @@
          }
 
          @media screen and (max-width: 370px) {
+            .services {
+               padding-bottom: 30px;
+         }
             .service h1::before {
                width: 50px;
             }
