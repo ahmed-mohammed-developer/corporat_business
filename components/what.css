@@ -1,0 +1,50 @@
+.what {
+   padding-block: 100px;
+}
+
+.what h1 {
+   margin-bottom: 10px;
+   position: relative;
+   margin-bottom: 50px;
+   text-align: center;
+}
+
+.what h1::before {
+   content: "";
+   position: absolute;
+   background: #0b1a28;
+   height: 2px;
+   width: 120px;
+   right: 0;
+   left: 0;
+   text-align: center;
+   margin: 0 auto;
+   bottom: -10px;
+
+}
+
+.what .what-section {
+   padding: 40px;
+   border-radius: 10px;
+   border: 2px solid #0b1a28;
+   max-width: 100%;
+   width: 450px;
+   text-align: center;
+   display: block;
+   margin-inline: auto;
+}
+
+.what .what-section h2 {
+   font-size: 30px;
+   color: #0d0d0d;
+   font-weight: 500;
+   padding-bottom: 20px;
+}
+
+.what .what-section p {
+   font-size: 18px;
+   color: #0d0d0d;
+   text-align: center;
+   margin-left: 0px;
+   line-height: 30px;
+}

@@ -1,0 +1,37 @@
+footer{
+      padding-top: 100px;
+      padding-bottom: 150px;
+      background-color: #0b1a28;
+      color: #ffffff;
+}
+footer .footer-top {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   align-items: center;
+   gap: 30px;
+}
+footer .footer-top .ooter-span {
+   max-width: 100%;
+}
+footer a {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   width: 250px; 
+    text-decoration: none;
+   color: #ffffff;
+   font-size: 16px;
+   padding: 10px 30px;
+   border: 1px solid #f5a738;
+   margin-right: 110px;
+   text-align: center;
+   transition: all 0.5s ease;
+}
+
+footer a span i {
+   padding-right: 10px
+}
+
+footer a:hover {
+   background:  #f5a738;
+}

@@ -1,0 +1,115 @@
+.contact {
+  padding-top: 100px;
+  padding-bottom: 150px;
+   background-color: #0b1a28;
+   color: #ffffff;
+}
+
+.contact h1 {
+   margin-bottom: 10px;
+   position: relative;
+}
+
+.contact h1::before {
+   content: "";
+   position: absolute;
+   background: #f5a738;
+   height: 2px;
+   width: 220px;
+   top: 21px;
+   right: 0;
+   left: 190px;
+}
+.contact .contact-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+   align-items: end;
+   gap: 30px;
+}
+.contact .contact-left form {
+   display: flex;
+   flex-direction: column;
+}
+
+.contact .contact-left form .mail_text {
+   font-size: 16px;
+   color: #333333;
+   border: 0px;
+   background-color: #ffffff;
+   padding: 12px 15px;
+   margin-top: 30px;
+   border-radius: 4px;
+}
+
+.contact .contact-left form .massage-bt {
+   color: #333333;
+   font-size: 18px;
+   background-color: #ffffff;
+   padding: 40px 15px 0px 15px;
+   border: 0px;
+   height: 100px;
+   margin-top: 30px;
+   border-radius: 4px;
+}
+
+.contact .contact-right {
+   max-width: 100%;
+}
+.contact .contact-right iframe {
+   width: 100%;
+   height: 315px;
+}
+
+ .contact  .btn_main a {
+   width: 120px;
+   padding: 15px 15px;
+   color: #ffffff;
+   background-color: #f5a738;
+   text-align: center;
+   font-size: 15px;
+   border-radius: 40px;
+   float: left;
+   text-decoration: none;
+   cursor: pointer;
+   transition: all 0.5s ease;
+   margin-top: 30px;
+}
+.contact  .btn_main a:hover {
+   color: #060707;
+   background-color: #ffffff;
+}
+
+
+@media screen and (max-width: 870px) {
+   .contact .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   }
+}
+@media screen and (max-width: 500px) {
+   .contact h1::before {
+      width: 170px;
+   }
+   }
+   @media screen and (max-width: 450px) {
+      .contact h1::before {
+         width: 120px;
+      }
+      }
+      @media screen and (max-width: 405px) {
+         .contact h1::before {
+            width: 90px;
+         }
+            .contact h1::before {
+               width: 50px;
+            }
+            }
+            @media screen and (max-width: 330px) {
+               .contact h1::before {
+                  display: none;
+               }
+               .contact .contact-grid {
+                  display: grid;
+                  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+               }
+               }
