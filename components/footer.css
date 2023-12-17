@@ -1,6 +1,6 @@
 footer{
       padding-top: 100px;
-      padding-bottom: 150px;
+      padding-bottom: 15px;
       background-color: #0b1a28;
       color: #ffffff;
 }
@@ -9,16 +9,17 @@ footer .footer-top {
    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
    align-items: center;
    gap: 30px;
+   margin-bottom: 40px;
 }
 footer .footer-top .ooter-span {
    max-width: 100%;
 }
-footer a {
+footer .footer-span a {
    display: flex;
    justify-content: center;
    gap: 10px;
    width: 250px; 
-    text-decoration: none;
+   text-decoration: none;
    color: #ffffff;
    font-size: 16px;
    padding: 10px 30px;
@@ -32,6 +33,77 @@ footer a span i {
    padding-right: 10px
 }
 
-footer a:hover {
+footer .footer-span a:hover {
    background:  #f5a738;
+}
+footer .footer-center {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   align-items: start;
+   gap: 30px;
+   margin-top: 80px;
+}
+
+footer .footer-center .footer-center-section h2{
+   font-size: 30px;
+}
+footer .footer-center .footer-center-section p{
+   margin-block: 20px;
+   font-weight: 300;
+   line-height: 25px;
+}
+footer .footer-center .footer-center-section-flex {
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   gap: 10px;
+}
+footer .footer-center .footer-center-section-flex .update_mail {
+   color: #bbbbbb;
+   height: 55px;
+   font-size: 18px;
+   padding: 10px 20px 0px 0px;
+   background-color: transparent;
+   border-bottom: 1px solid #bbbbbb !important;
+   border: 0px;
+}
+
+footer .footer-center .footer-center-section-flex .footer_btn {
+   width: 140px;
+}
+footer .footer-center .footer-center-section-flex .footer_btn a {
+   width: 100%;
+   float: left;
+   color: #f5a738;
+   font-size: 25px;
+   padding: 10px 0px;
+   text-transform: uppercase;
+   font-weight: bold;
+   text-decoration: none;
+   margin-top: 10px;
+   transition: all 0.5s ease-in-out;
+}
+footer .footer-center .footer-center-section-flex .footer_btn a:hover {
+   color: #ffffff;
+}
+footer .footer-icon {
+   display: flex;
+   gap: 10px;
+   margin-top: 10px;
+}
+footer .footer-icon a {
+   font-size: 30px;
+   transition: all 0.5s ease-in-out;
+   color: #ffffff;
+}
+footer .footer-icon a:hover {
+   color: #f5a738;
+}
+footer .footer-end {
+   margin-top: 150px;
+   text-align: center;
+}
+footer .footer-end a {
+   text-decoration: none;
+   color: #bbbbbb;
 }
